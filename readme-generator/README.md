@@ -16,39 +16,22 @@ AIエージェントを活用した README 自動生成ツールです。
 
 | カテゴリ | 技術 |
 |----------|------|
-| ランタイム | Node.js (ES Modules) |
-| AI | Antigravity CLI ※推測 |
+| AI | Antigravity（デスクトップアプリ） |
 | 言語 | JavaScript |
 
 ## セットアップ方法
 
 ### 前提条件
 
-- Node.js がインストールされていること
-- Antigravity CLI がインストールされていること ※推測
-
-### インストール
-
-```bash
-cd readme-generator
-npm install
-```
+- Antigravity デスクトップアプリがインストールされていること
 
 ## 実行方法
 
-### 基本実行
+### Antigravityでの実行方法
 
-```bash
-npm run generate
-```
-
-### ディレクトリ指定
-
-```bash
-node scripts/generate-readme.js <対象ディレクトリ>
-```
-
-生成された README は `output/README.md` に出力されます。
+1. Antigravityアプリで本プロジェクトフォルダを開く
+2. `agent/readme.agent.md` をエージェントとして選択
+3. エージェントを実行し、生成結果を `README.md` として保存
 
 ## ディレクトリ構成
 
@@ -65,7 +48,8 @@ readme-generator/
 
 ## 補足・注意点
 
-- Antigravity CLI の仕様は推測です。実際の動作には Antigravity CLI のインストールと設定が必要となる可能性があります
+- 本ツールは現時点では Antigravity デスクトップアプリ上でのエージェント実行を前提としています
+- CLI化は将来的な拡張予定です
 - エージェント定義ファイル（`agent/readme.agent.md`）でREADMEの出力ルールや構成をカスタマイズできます
 - ライセンスは MIT です
 
