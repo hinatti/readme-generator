@@ -1,0 +1,13 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "AI-powered README generator using agents",
+  "type": "module",
+  "main": "scripts/generate-readme.js",
+  "scripts": {
+    "generate": "node scripts/generate-readme.js"
+  },
+  "keywords": ["readme", "generator", "ai", "agent"],
+  "author": "",
+  "license": "MIT"
+}
